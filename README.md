@@ -220,7 +220,7 @@ look like this now:
 
 ```js
 useEffect(() => {
-  console.log('UseEffect1 Ran');
+  console.log('UseEffect2 Ran');
   if (toggleTwo)
     console.log('toggleTwo slice of state is true so this code runs');
 }, [toggleTwo]);
@@ -253,7 +253,7 @@ const [count, setCount] = useState(0);
 ```
 
 Beneath the `setToggleTwo` button, create a button for "Count" and use the
-`onClick` event listener to decrement the count.
+`onClick` event listener to increment the count.
 
 Create a third `useEffect` that listens for the `count` slice of state.
 
